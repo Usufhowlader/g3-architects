@@ -79,6 +79,7 @@ main{
       align-items: center;
       gap: 50px;
       padding:80px 240px;
+      
 }
 .teams{
     display: grid;
@@ -101,6 +102,62 @@ main{
     color: #FF900E;
     font-weight: 700;
 }
+/* Features style */
+.features img{
+    width: 500px;
+    height: 700px;
+    margin-left: 50px;
+}
+.features{
+     padding: 0 150px;
+     margin-bottom: 100px;  
+}
+    .features-content{
+        display: flex;
+        justify-content: space-between;
+        gap: 50px;
+    }
+    .features-tittle{
+        color:#131313;
+        font-size: 45px;
+        font-weight: 700;
+        border-left: 5px solid  #FF900E;
+        padding-left: 5px;
+    }
+    .features-groups{
+        border-radius: 8px;
+        background: #FFF;
+        box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+        margin-bottom: 20px;
+    }
+    .features-groups-tittle{
+        color:#131313;
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .Experience{
+        border-radius: 8px;
+        background: #FF900E;
+        padding: 30px;
+        width: 342px;
+        color: #FFF;
+        text-align: center;
+        position: relative;
+        bottom: 100px;
+    }
+    .Experience h4{
+        font-size: 65px;
+        font-weight: 700;
+        margin: 0;
+    }
+    .Experience p{
+        font-size: 25px;
+        font-weight: 500px;
+        margin: 0;
+    }
+
+
+
 
 
 
@@ -110,7 +167,7 @@ main{
     header{
         padding: 20px;
        }
-    nav, nav > ul{
+    nav, nav > ul, .features-content{
         flex-direction: column;
     }
     .Quick-list-content{
@@ -119,20 +176,29 @@ main{
     .teams{
         grid-template-columns: repeat(1,1fr);
     }
-    .Quick-list-content{
+    .Quick-list-content, .features{
         padding: 20px;
     }
     .teams img{
         width: 100%;
         margin-bottom: 20px;
     }
+    .features img{
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+    .Experience{
+        position: static;
+        max-width: 280px;
+    }
 }
 /* Medium devices */
 @media screen and (min-width:577px) and (max-width:992px){
-    header,  .Quick-list-content{
+    header,  .Quick-list-content, .features{
         padding: 50px;
        }
-    nav{
+    nav, .features-content{
         flex-direction: column;
     }
     .Quick-list-content{
@@ -141,5 +207,9 @@ main{
     .teams img{
         width: 100%;
        
+    }
+    .features img{
+        width: 650px;
+        margin-left: 0; 
     }
 }
