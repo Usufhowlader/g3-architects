@@ -34,7 +34,6 @@ nav li{
 nav li a{
     text-decoration: none;
     color:#424242;
-    
 }
 /* Banner Styles */
 .banner-content{
@@ -79,7 +78,6 @@ main{
       align-items: center;
       gap: 50px;
       padding:80px 240px;
-      
 }
 .teams{
     display: grid;
@@ -155,9 +153,34 @@ main{
         font-weight: 500px;
         margin: 0;
     }
+    /* Some Facts styles */
+    .some-facts{
+        margin-bottom: 100px;
+        margin: 0 150px;
+    }
+    .some-facts-tittle{
+        color: #131313;
+        font-size: 45px;
+        font-weight: 700;
+    }
+    .cards{
+       display: grid;
+       grid-template-columns: repeat(4, 1fr);
+       gap: 20px;
+       text-align: center;
+       margin: 50px 50px;
 
-
-
+    }
+    .card{
+        border-radius: 8px;
+        border: 1px solid #FF900E;
+        padding:50px 10px;
+        align-items: center;
+        text-align: center;
+        background-color: #FFF;
+        box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.774);
+        
+    }
 
 
 
@@ -192,6 +215,13 @@ main{
         position: static;
         max-width: 280px;
     }
+    .some-facts{
+        margin: 0 20px;
+    }
+    .cards{
+        grid-template-columns: repeat(1, 1fr);
+        margin: 30px 30px;
+    }
 }
 /* Medium devices */
 @media screen and (min-width:577px) and (max-width:992px){
@@ -206,10 +236,16 @@ main{
     }
     .teams img{
         width: 100%;
-       
     }
     .features img{
         width: 650px;
         margin-left: 0; 
+    }
+    .some-facts{
+        margin: 0 50px;
+    }
+    .cards{
+        grid-template-columns: repeat(2, 1fr);
+        margin: 50px 50px;
     }
 }
